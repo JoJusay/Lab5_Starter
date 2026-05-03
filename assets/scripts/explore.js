@@ -52,5 +52,6 @@ function init() {
 
     //Change Image
     utterThis.onend = () => {picture.src = "assets/images/smiling.png";};
+    console.log("Spoke text");
   });
 }
