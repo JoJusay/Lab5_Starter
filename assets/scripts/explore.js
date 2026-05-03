@@ -44,13 +44,13 @@ function init() {
       }
     }
 
-    //Change Image
+    //Change Image to open
     utterThis.onstart = () => {picture.src = "assets/images/smiling-open.png";};
 
     //Speak
     synth.speak(utterThis);
 
-    //Change Image
+    //Change Image back to closed
     utterThis.onend = () => {picture.src = "assets/images/smiling.png";};
     console.log("Spoke text");
   });
