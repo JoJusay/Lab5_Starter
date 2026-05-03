@@ -10,6 +10,7 @@ function init() {
   let button = document.querySelector("button");
   let volume = document.getElementById("volume");
   let volume_img = document.querySelector("#volume-controls img");
+  const confetti = new JSConfetti();
 
   //Change sound of button
   audio_choice.addEventListener("change", function() {
@@ -39,6 +40,15 @@ function init() {
   button.addEventListener("click", function() {
     audio.play();
     console.log("Played Audio");
+  });
+
+  //Confetti
+  setTimeout(() => {confetti.addConfetti;}, 500);
+  button.addEventListener("click", function() {
+    if (audio_choice.value == "party-horn") {
+      confetti.addConfetti();
+    }
+    console.log("Played Confetti");
   });
 
   //Change Volume
