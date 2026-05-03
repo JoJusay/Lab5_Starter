@@ -48,7 +48,7 @@ function init() {
   });
 
   //Change Volume Image
-  volume.addEventListener("change", function() {
+  volume.addEventListener("input", function() {
     let vol = parseInt(volume.value, 10);
     if (vol == 0) {
       volume_img.src = "assets/icons/volume-level-0.svg"; 
