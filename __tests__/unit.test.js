@@ -9,7 +9,7 @@ import {
 } from '../code-to-unit-test/unit-test-me';
 
 // TODO - Part 2
-//isPhoneNumber
+//isPhoneNumber Tests
 test('Verifies wrong format to be false', () => {
     expect(isPhoneNumber("11111111111")).toBe(false);
 });
@@ -26,7 +26,7 @@ test('230-0921 is valid', () => {
     expect(isPhoneNumber("230-0921")).toBe(true);
 });
 
-//isEmail
+//isEmail Tests
 test('lamp.com is invalid', () => {
   expect(isEmail("lamp.com")).toBe(false);
 });
@@ -55,7 +55,7 @@ test('valid@email.com is valid', () => {
   expect(isEmail("valid@email.com")).toBe(true);
 });
 
-//isStrongPassword
+//isStrongPassword Tests
 test('ThisPasswordHasMoreThanSixteenCharacters is invalid', () => {
   expect(isStrongPassword("ThisPasswordHasMoreThanSixteenCharacters")).toBe(false);
 });
@@ -84,7 +84,7 @@ test('vaLiDPa55w0rD is valid', () => {
   expect(isStrongPassword("vaLiDPa55w0rD")).toBe(true);
 });
 
-//isDate
+//isDate Tests 
 test('1000/1000/1100 is invalid', () => {
   expect(isDate("1000/1000/1100")).toBe(false);
 });
@@ -109,7 +109,7 @@ test('1/1/2003 is valid', () => {
   expect(isDate("1/1/2003")).toBe(true);
 });
 
-//isHexColor
+//isHexColor Tests
 test('#A is invalid', () => {
   expect(isHexColor("#A")).toBe(false);
 });
