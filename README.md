@@ -4,6 +4,7 @@ Note: Make sure you make a PR to your own repo's main and not the class' repo!! 
 Worked on By: Jorell Jusay
 
 Expose Website: https://jojusay.github.io/Lab5_Starter/expose.html
+
 Explore Website: https://jojusay.github.io/Lab5_Starter/explore.html
 
 Explore - Part 2 Questions
